@@ -121,3 +121,22 @@ pre {
   border-left-color: rgba(255, 107, 107, 0.7);
   background: rgba(255, 107, 107, 0.08);
 }
+
+.opened-envelopes {
+  display: grid;
+  gap: 12px;
+}
+
+@media (min-width: 1024px) {
+  .opened-envelopes {
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    overflow-x: hidden;
+  }
+
+  .opened-envelope-card {
+    flex: 0 0 calc((100% - 60px) / 6);
+  }
+}

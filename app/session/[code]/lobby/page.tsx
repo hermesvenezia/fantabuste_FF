@@ -100,9 +100,9 @@ export default async function LobbyPage({
           <h2>Buste aperte</h2>
           <p className="muted">Ora sono visibili tutte le buste (testo libero).</p>
 
-          <div className="stack" style={{ gap: 12 }}>
+          <div className="opened-envelopes">
             {participants.map((p) => (
-              <div key={p.id} className="card" style={{ padding: 12 }}>
+              <div key={p.id} className="card opened-envelope-card" style={{ padding: 12 }}>
                 <div className="row" style={{ justifyContent: 'space-between' }}>
                   <strong>{p.displayName}</strong>
                   <span className="badge">{p.submittedAt ? '✅ consegnata' : '⚠️ non consegnata'}</span>
